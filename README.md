@@ -1,84 +1,23 @@
-# Gamma Science
+# gamma-science
 
-## Role in Gamma Labyrinth
-scientific source/references/empirical grounding; not runtime truth storage.
+Scientific claims with provenance, and targets judges measure against.
 
-## Plane Classification
-Science Plane.
+Proposed future name: **jynx-science** (proposal, not renamed yet)
 
-## Truth-Safety Note
-`truth_mode: truth_safe_unverified`. This repository defines the scientific substrate but does not store live runtime truth.
+## Place in the 7-repo layout
 
-## Coordination
-Refer to GitHub Project `gamma` for tasks and issues.
+Plane: **SCIENCE**. See [HNXJ/jynx-arena](https://github.com/HNXJ/jynx-arena) and its [architecture](https://github.com/HNXJ/jynx-arena/blob/main/docs/protocol/ARCHITECTURE.md) (ARENA, RULES, SCIENCE, LAB, ENGINE, JUDGE, WORLD). The current jynx-arena runtime is proposed to become **jynx-engine**; **jynx-world** (event ledger, projections) is a new proposed repo.
 
-## Guidelines
-Agents must verify branch/status before work.
+## Holds today
 
-## Ignore Rules
-This repository ignores `.DS_Store`, `*.npy`, `*.mat`, and `*.html`.
+- `ontology/`: Markdown on cell types, core entities, mechanisms and metrics.
+- No datasets, targets or claim records yet.
 
----
+## Shared root layout (target, not yet applied)
 
-## Role in Gamma
+`artifacts/`, `docs/`, `src/`, `schemas/`, `tests/`, `tournaments/`, `README.md` — see [SHARED_ROOT_LAYOUT](https://github.com/HNXJ/jynx-arena/blob/main/docs/protocol/SHARED_ROOT_LAYOUT.md).
 
-Gamma Science is the scientific validity and canon layer of the Gamma ecosystem.
+## Truth safety
 
-It defines how scientific claims become acceptable evidence, stores citations and reference material, and maintains reproducibility norms and validity criteria.
+A Judge PASS means a submission met a rubric under a protocol version; it is not scientific truth.
 
-## Four-Plane Position
-
-Gamma Science operates primarily in the **Observation** and **Control** planes.
-
-It informs the Truth plane but does not own truth gates.
-
-## What Lives Here
-
-- Scientific evidence collections
-- Citation databases and reference material
-- Accepted evidence standards
-- Validity and reproducibility criteria
-- Claim acceptance norms and rejection records
-- Scientific reference implementations
-
-## What Must Never Live Here
-
-- Runtime execution code
-- UI rendering code
-- API secrets or credentials
-- Unvalidated claims presented as canon
-- General project governance (that belongs in gamma-protocol)
-- Truth-bearing execution gates
-
-## Relationship to Other Repos
-
-- `gamma-protocol` defines the rules for how scientific claims become accepted
-- `gamma` holds the runtime truth gates; Gamma Science informs but does not control them
-- `gamma-analysis` provides the analytical methods; Gamma Science holds the reference canon
-- `gamma-arena` displays scientific evidence on the observation surface
-
-## Foundational Ontology
-
-The shared scientific vocabulary for Gamma Labyrinth lives in `ontology/`.
-
-It defines:
-- **Core Entities**: High-level phenomena and structural components.
-- **Cell Types**: Biological classification and roles.
-- **Mechanisms**: Hypothesized biophysical processes.
-- **Metrics**: Standardized benchmarks and evidence labels.
-
-## Scientific Claim Levels
-
-1. **Hypothesis** — proposed, not yet tested
-2. **Provisional Evidence** — tested but not replicated
-3. **Replicated Evidence** — confirmed by independent runs
-4. **Accepted Canon** — meets full validity criteria
-5. **Rejected/Invalidated** — explicitly marked as not valid
-
----
-
-© 2026 HNXJ(H.Nejat) / BASTOSLAB / VANDERBILT UNIVERSITY
-
-## Coordination
-
-This repository follows the [GAMMA-BUS Coordination Doctrine](GEMINI.md). Agents should refer to `GEMINI.md` for specific instructions and coordination rules.
