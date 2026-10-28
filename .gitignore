@@ -183,3 +183,5 @@ var/
 venv.bak/
 venv/
 wheels/
+*.token
+*.pyc
